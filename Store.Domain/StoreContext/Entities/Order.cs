@@ -1,4 +1,5 @@
-﻿using Store.Domain.StoreContext.Entities;
+﻿using FluentValidator;
+using Store.Domain.StoreContext.Entities;
 using Store.Domain.StoreContext.Enums;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace Store.Domain.StoreContext.Entities
 {
-    public class Order
+    public class Order: Notifiable
     {
         private readonly IList<OrderItem> _items;
         private readonly IList<Delivery> _deliveries;
@@ -40,6 +41,8 @@ namespace Store.Domain.StoreContext.Entities
             //gera o numero do pedido
 
             Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
+            if (_items.Count == 0)
+                AddNotification("Order", "Este pedido não possui itens ");
         }
         //Pagar um pedido
         public void Pay()
