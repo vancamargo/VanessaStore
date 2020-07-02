@@ -25,5 +25,13 @@ namespace Store.Tests
         {
             Assert.AreEqual(true, validDocument.IsValid);
         }
+
+        [TestMethod]
+        public void ShouldReturnNotificationWhenNametIsValid()
+        {
+            var name = new Name("", "Vanessa");
+            Assert.AreEqual(false, name.IsValid);
+            Assert.AreEqual(1, name.Notifications.Count);
+        }
     }
 } 
