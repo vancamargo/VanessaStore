@@ -1,8 +1,12 @@
-﻿using System;
+﻿using FluentValidator;
+using FluentValidator.Validation;
+using Store.Shared.Commands;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Store.Domain.Commands.CustomerCommands.Input
+
+namespace Store.Domain.Commands
 {
     public class CreateCustomerCommand : Notifiable, ICommand
     {

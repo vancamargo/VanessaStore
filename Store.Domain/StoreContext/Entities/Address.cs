@@ -1,13 +1,14 @@
 ﻿
 using FluentValidator;
 using Store.Domain.StoreContext.Enums;
+using Store.Shared.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Store.Domain.StoreContext.Entities
 {
-    public class Address: Notifiable
+    public class Address:  Entity
     {
         public Address(string street,
             string number,

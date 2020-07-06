@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Store.Shared.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Store.Domain.StoreContext.Entities
 {
-    public class Product
+    public class Product: Entity 
     {
         public Product(string title, string description, string image, decimal price, decimal quantity)
         {

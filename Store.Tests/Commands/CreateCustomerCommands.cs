@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Store.Domain.Commands;
 using Store.Domain.StoreContext.Entities;
 using Store.Domain.StoreContext.ValueObjects;
 
@@ -11,7 +12,7 @@ namespace Store.Tests
         [TestMethod]
         public void ShouldValidateWhenCommandIsValid()
         {
-            var command = new CreateCustomerCommands();
+            var command = new CreateCustomerCommand();
             command.FirstName = "Vanessa";
             command.LastName = "Camargo";
             command.Document = "28659170377";

@@ -1,11 +1,15 @@
-﻿using Store.Domain.BackOfficeContext;
+﻿using FluentValidator;
+using FluentValidator.Validation;
+using Store.Domain.BackOfficeContext;
+using Store.Shared.Command;
 using System;
 using System.Collections.Generic;
-using System.Text;
+
+
 
 namespace Store.Domain.Commands.OrderCommands.Inputs
 {
-    public class PlaceOrderCommand:  Notifiable, ICommand
+    public class PlaceOrderCommand: Notifiable, ICommand
     {
        public PlaceOrderCommand()
         {
