@@ -1,5 +1,4 @@
-﻿using Store.Shared.Command;
-using Store.Shared.Commands;
+﻿using Store.Shared.Commands;
 using System;
 using System.Collections.Generic;
 using System.Text;

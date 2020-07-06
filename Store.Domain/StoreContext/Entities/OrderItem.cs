@@ -22,6 +22,6 @@ namespace Store.Domain.StoreContext.Entities
         public Product Product { get; private set; }
         public decimal Quantity { get; private set; }
         public decimal Price { get; private set; }
-        public IDictionary<string, string> Notifications { get; set; }
+      
     }
 }

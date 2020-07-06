@@ -1,7 +1,6 @@
 ﻿using FluentValidator;
 using System;
 
-using FluentValidator;
 using FluentValidator.Validation;
 using System.Text;
 

@@ -1,7 +1,7 @@
 ﻿using FluentValidator;
 using FluentValidator.Validation;
 using Store.Domain.BackOfficeContext;
-using Store.Shared.Command;
+using Store.Shared.Commands;
 using System;
 using System.Collections.Generic;
 

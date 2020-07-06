@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Store.Domain.Commands;
+using Store.Domain.Commands.CustomerCommands.Input;
 using Store.Domain.StoreContext.Entities;
 using Store.Domain.StoreContext.ValueObjects;
 
