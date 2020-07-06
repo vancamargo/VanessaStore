@@ -26,6 +26,7 @@ namespace Store.Domain.Commands.CustomerCommands.Input
 
             // se o usuario existe no banco email
             //se o usuario existe no banco cpf
+            //teste
         }
     }
 }
