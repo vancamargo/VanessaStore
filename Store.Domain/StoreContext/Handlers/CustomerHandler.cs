@@ -13,14 +13,21 @@ namespace Store.Domain.StoreContext.Handlers
 {
     public class CustomerHandler : Notifiable, ICommandHandler<CreateCustomerCommand>, ICommandHandler<AddAddressCommands>
     {
+       
         private readonly ICustomerRepository _repository;
         private readonly IEmailService _emailService;
+
+        public CustomerHandler()
+        {
+        }
+
         public CustomerHandler(ICustomerRepository repository, IEmailService emailService)
         {
             _repository = repository;
             _emailService = emailService;
         }
 
+       
         public ICommandResult Handle(CreateCustomerCommand command)
         {
 

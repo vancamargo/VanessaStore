@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Store.Shared.Entities
 {
-    public class Entity: Notifiable 
+    public abstract class Entity: Notifiable 
     {
         public Entity()
         {
