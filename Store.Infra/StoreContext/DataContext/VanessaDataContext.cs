@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Store.Infra.StoreContext.DataContext
 {
-    public class BaltaDataContext : IDisposable
+    public class VanessaDataContext : IDisposable
     {
         public SqlConnection Connection { get; set; }
 
-        public BaltaDataContext()
+        public VanessaDataContext()
         {
             Connection = new SqlConnection(Settings.ConnectionString);
             Connection.Open();

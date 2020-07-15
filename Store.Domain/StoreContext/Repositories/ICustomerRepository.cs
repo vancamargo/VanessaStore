@@ -1,5 +1,6 @@
 ﻿
 
+using Store.Domain.Queries;
 using Store.Domain.StoreContext.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,6 @@ namespace Store.Domain.StoreContext.Repositories
         bool ChekDocument(string document);
         bool CheckEmail(string email);
         void Save(Customer customer);
+        CustomerOrderCountResult GetCustomerOrderCount(string document);
     }
 }
